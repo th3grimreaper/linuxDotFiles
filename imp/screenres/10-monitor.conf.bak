@@ -1,0 +1,15 @@
+Section "Monitor"
+	Identifier "Monitor0"
+  	Modeline "1366x768_widescreen"  85.86  1368 1440 1584 1800  768 769 772 795  -HSync +Vsync
+EndSection
+Section "Screen"
+	Identifier "Screen0"
+	Device "VGA1"
+	Monitor "Monitor0"
+	DefaultDepth 24
+	Subsection "Display"
+		Depth 24
+		Modes "1366x768_widescreen" "1280x768" "800x600"
+	EndSubsection
+EndSection
+
